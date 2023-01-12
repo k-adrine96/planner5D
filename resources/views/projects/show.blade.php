@@ -6,13 +6,13 @@
     <title>Planner5D</title>
 </head>
 <body>
-    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-        <div class="project">
+    <div>
+        <div class="project" style="text-align: center">
             <h1 class="title">{{ $project->title }}</h1>
             <div class="thumbnail">
                 <img src="{{ $project->image }}" alt="">
             </div>
-            <div class="views">{{ $project->views }}</div>
+            <div class="views">{{ $project->views }} Views</div>
         </div>
     </div>
 </body>

@@ -4,12 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Planner5D</title>
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}"></script>
-        <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <!-- Bootstrap core CSS -->
-        <link href = {{ asset("bootstrap/css/bootstrap.css") }} rel="stylesheet" />
+{{--        <link href="{{ asset('../css/style.css') }}" rel="stylesheet">--}}
         <style>
             div.projects {
                 width: 83%;
@@ -28,6 +23,7 @@
             }
             div.pagination {
                 padding-bottom: 5%;
+                text-align: center;
             }
             div.pagination > nav {
                 width: 50%;
@@ -35,13 +31,16 @@
             }
             ul.pagination {
                 list-style-type: none;
+                display: inline-block;
+                /*text-align: -webkit-auto;*/
+                padding: 0;
             }
             ul.pagination > li {
                 float: left;
                 border: 1px solid black;
                 padding: 5px 10px;
-                margin-left: 12%;
                 border-radius: 10px;
+                margin: 0px 10px;
             }
             div.project > a,
             ul.pagination > li > a{
